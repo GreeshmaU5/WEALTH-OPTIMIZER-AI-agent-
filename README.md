@@ -1,16 +1,42 @@
-# React + Vite
+# Wealth Optimizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, full-featured personal finance and wealth management web application designed to help users track investments, monitor savings goals, manage debts, and gain financial insights through an intuitive dashboard. 
 
-Currently, two official plugins are available:
+**Live Demo:** [https://wealth-optimizer-seven.vercel.app](https://wealth-optimizer-seven.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Interactive Financial Dashboard:** Provides a centralized, real-time overview of net worth, income streams, expenses, and asset allocations.
+* **Investment Portfolio Tracking:** Tracks distribution across various assets and visualizes portfolio growth over time.
+* **Smart Goal Setting & Milestones:** Empowers users to set financial targets, track progress, and map out timelines.
+* **Debt & Expense Manager:** Monitors liabilities and daily spending habits to optimize cash flow management.
+* **AI Financial Coach (In Progress):** Interactive module to simulate financial scenarios and receive automated guidance.
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Tech Stack & Architecture
+
+* **Frontend:** React, Vite (for lightning-fast builds and HMR)
+* **Styling & UI:** Modern CSS / Responsive Component Architecture
+* **State Management & Logic:** React Context API, custom calculation engines, and localized data storage utilities
+* **Deployment & CI/CD:** Hosted and continuously deployed via Vercel
+
+---
+
+## Project Structure
+
+```text
+wealth-optimizer/
+├── public/               # Static assets and icons
+├── src/
+│   ├── components/       # Modular UI components (Dashboard, Goals, Investments, Coach, etc.)
+│   ├── context/          # Global React context providers (WealthContext)
+│   ├── engine/           # Calculation engines, AI coach logic, and helper utilities
+│   ├── utils/            # Local storage and data management functions
+│   ├── App.jsx           # Root application component
+│   ├── main.jsx          # Entry point
+│   └── index.css         # Global stylesheets
+├── package.json          # Project dependencies and npm scripts
+└── vite.config.js        # Vite build configuration
